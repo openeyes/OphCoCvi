@@ -1,3 +1,7 @@
+# DEPRECATED
+
+_this module has now become a part of the core of [OpenEyes](https://github.com/openeyes/OpenEyes), and no further development will take place on this repository_ At the time of deprecation, it was a part of 1.16, so the code will be found in the relevant release branch, and later on in the main branches and all future releases.
+
 # OphCoCvi
 
 An OpenEyes event module to generate electronic CVI (Certificate of Visual Impairment)
