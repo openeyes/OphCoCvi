@@ -29,87 +29,86 @@ class LabelPrintController extends \BaseController
         );
         
         $testAddresses = array(
-            '2 Sir Simon Milton Square<br/>
-            LONDON<br/>
+            '2 Sir Simon Milton Square\n
+            LONDON\n
             SW1E 5DJ',
-            '37 Well Grove<br/>
-            Totteridge<br/>
-            LONDON<br/>
-            <br/>
+            '37 Well Grove\n
+            Totteridge\n
+            LONDON\n
+            \n
             N20 9BN',
-            'Coppa Club<br/>
-            3 Three Quays Walk<br/>
-            LONDON<br/>
-            <br/>
+            'Coppa Club\n
+            3 Three Quays Walk\n
+            LONDON\n
+            \n
             EC3R 6AH ',
-            '2 Sir Simon Milton Square<br/>
-            LONDON<br/>
+            '2 Sir Simon Milton Square\n
+            LONDON\n
             SW1E 5DJ',
-            '2 Sir Simon Milton Square<br/>
-            LONDON<br/>
+            '2 Sir Simon Milton Square\n
+            LONDON\n
             SW1E 5DJ',
-            '2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
-            SW1E 5DJ','2 Sir Simon Milton Square<br/>
-            LONDON<br/>
+            '2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
+            SW1E 5DJ','2 Sir Simon Milton Square\n
+            LONDON\n
             SW1E 5DJ',
-            '2 Sir Simon Milton Square<br/>
-            LONDON<br/>
+            '2 Sir Simon Milton Square\n
+            LONDON\n
             SW1E 5DJ',
-            'Coppa Club<br/>
-            3 Three Quays Walk<br/>
-            LONDON<br/>
-            <br/>
+            'Coppa Club\n
+            3 Three Quays Walk\n
+            LONDON\n
+            \n
             EC3R 6AH ',
-            'Coppa Club<br/>
-            3 Three Quays Walk<br/>
-            LONDON<br/>
-            <br/>
+            'Coppa Club\n
+            3 Three Quays Walk\n
+            LONDON\n
+            \n
             EC3R 6AH ',
-            'Coppa Club<br/>
-            3 Three Quays Walk<br/>
-            LONDON<br/>
-            <br/>
+            'Coppa Club\n
+            3 Three Quays Walk\n
+            LONDON\n
+            \n
             EC3R 6AH ',
-            'Coppa Club<br/>
-            3 Three Quays Walk<br/>
-            LONDON<br/>
-            <br/>
+            'Coppa Club\n
+            3 Three Quays Walk\n
+            LONDON\n
+            \n
             EC3R 6AH ',
-            'Coppa Club<br/>
-            3 Three Quays Walk<br/>
-            LONDON<br/>
-            <br/>
+            'Coppa Club\n
+            3 Three Quays Walk\n
+            LONDON\n
+            \n
             EC3R 6AH '
         );
         
-        $labelClass->fillLabelsInTable( $testAddresses , 0);
-        //$labelClass->removeElement();
-        //exit;
+        $labelClass->fillLabelsInTable( 'LabelsTable', $testAddresses , 2);
+
         $labelClass->saveContentXML();
         $labelClass->generatePDF();
         $labelClass->getPDF();
